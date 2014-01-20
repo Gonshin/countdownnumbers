@@ -1,0 +1,32 @@
+
+<LinearLayout xmlns:android     = "http://schemas.android.com/apk/res/android"
+    xmlns:tools                 = "http://schemas.android.com/tools"
+    android:layout_width        = "match_parent"
+    android:layout_height       = "match_parent"
+    android:orientation         = "vertical" 
+    android:background          = "@drawable/background_pattern">
+
+    <TextView
+        android:id              = "@+id/result_title_box"
+        android:layout_width    = "wrap_content"
+        android:layout_height   = "wrap_content"
+        android:text            = "@string/results_title"
+        tools:context           = ".ResultsPage"
+        android:textSize        = "14dp" />
+    
+    <TextView
+        android:id              = "@+id/result_text"
+        android:layout_width    = "wrap_content"
+        android:layout_height   = "wrap_content"
+        android:text            = "@string/results"
+        tools:context           = ".ResultsPage" 
+        android:textSize        = "18dp"/>
+    
+    <Button
+        android:id              = "@+id/return_to_main_button"        
+        android:layout_width    = "wrap_content"
+        android:layout_height   = "wrap_content"
+        android:text            = "@string/return_to_main" 
+        android:onClick         = "returnToMain" />
+        
+</LinearLayout>  

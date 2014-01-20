@@ -1,0 +1,168 @@
+<ScrollView 
+    xmlns:android             = "http://schemas.android.com/apk/res/android"
+    xmlns:tools               = "http://schemas.android.com/tools"
+    android:layout_width      = "fill_parent"
+    android:layout_height     = "fill_parent" 
+    android:background        = "@drawable/background_pattern">  
+    
+   <LinearLayout 
+      xmlns:android           = "http://schemas.android.com/apk/res/android"
+      xmlns:tools             = "http://schemas.android.com/tools"     
+      android:layout_width    = "fill_parent"
+      android:layout_height   = "wrap_content" 
+      android:orientation     = "vertical">
+
+    <TextView
+        android:id            = "@+id/title_text_box"
+        android:layout_width  = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text          = "@string/title_text"
+        tools:context         = ".MainPage"
+        android:textSize      = "20dp"
+        android:textStyle     = "bold" />
+     
+     <TextView
+        android:id            = "@+id/target_text"
+        android:layout_width  = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text          = "@string/target_number"
+        android:textSize      = "15dp"        
+        tools:context         = ".MainPage" />
+     
+    <EditText android:id      = "@+id/target"
+        android:layout_width  = "150dp"
+        android:layout_height = "wrap_content"
+        android:inputType     = "number"
+        android:gravity       = "center"
+        android:hint          = "@string/target_number" 
+        android:background    = "@drawable/textbox_bg"  />
+    
+    <TextView
+        android:id            = "@+id/input_text"
+        android:layout_width  = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text          = "@string/input_numbers"
+        android:textSize      = "15dp"
+        tools:context         = ".MainPage" />
+
+    
+   <LinearLayout 
+      xmlns:android           = "http://schemas.android.com/apk/res/android"
+      xmlns:tools             = "http://schemas.android.com/tools"     
+      android:layout_width    = "fill_parent"
+      android:layout_height   = "wrap_content" 
+      android:orientation     = "horizontal">
+
+       
+       <EditText android:id             = "@+id/input_1"
+                 android:layout_width   = "75dp"
+                 android:layout_height  = "wrap_content" 
+                 android:inputType      = "number"
+                 android:gravity        = "center"
+                 android:hint           = "@string/input_1" 
+                 android:background     = "@drawable/textbox_bg"
+                 android:nextFocusDown  = "@+id/input_2" />
+       
+       <EditText android:id             = "@+id/input_2"
+                 android:layout_width   = "75dp"
+                 android:layout_height  = "wrap_content" 
+                 android:inputType      = "number"
+                 android:gravity        = "center"
+                 android:hint           = "@string/input_2"
+                 android:background     = "@drawable/textbox_bg"
+                 android:nextFocusDown  = "@+id/input_3" />
+              
+       <EditText android:id             = "@+id/input_3"
+                 android:layout_width   = "75dp"
+                 android:layout_height  = "wrap_content" 
+                 android:gravity        = "center"
+                 android:inputType      = "number"
+                 android:hint           = "@string/input_3"
+                 android:background     = "@drawable/textbox_bg"
+                 android:nextFocusDown  = "@+id/input_4" />
+              
+      </LinearLayout>
+      <LinearLayout 
+        xmlns:android           = "http://schemas.android.com/apk/res/android"
+        xmlns:tools             = "http://schemas.android.com/tools"     
+        android:layout_width    = "fill_parent"
+        android:layout_height   = "wrap_content" 
+        android:orientation     = "horizontal">
+
+   
+       <EditText android:id             = "@+id/input_4"
+                 android:layout_width   = "75dp"
+                 android:layout_height  = "wrap_content" 
+                 android:gravity        = "center"
+                 android:inputType      = "number"
+                 android:hint           = "@string/input_4" 
+                 android:background     = "@drawable/textbox_bg"
+                 android:nextFocusDown  = "@+id/input_5" />
+              
+       <EditText android:id             = "@+id/input_5"
+                 android:layout_width   = "75dp"
+                 android:gravity        = "center"
+                 android:layout_height  = "wrap_content" 
+                 android:inputType      = "number"
+                 android:hint           = "@string/input_5" 
+                 android:background     = "@drawable/textbox_bg"
+                 android:nextFocusDown  = "@+id/input_6" />
+              
+       <EditText android:id             = "@+id/input_6"
+                 android:layout_width   = "75dp"
+                 android:layout_height  = "wrap_content" 
+                 android:inputType      = "number"
+                 android:gravity        = "center"
+                 android:hint           = "@string/input_6" 
+                 android:background     = "@drawable/textbox_bg" /> 
+       
+    </LinearLayout>
+    
+   <LinearLayout 
+      xmlns:android           = "http://schemas.android.com/apk/res/android"
+      xmlns:tools             = "http://schemas.android.com/tools"     
+      android:layout_width    = "fill_parent"
+      android:layout_height   = "wrap_content" 
+      android:orientation     = "horizontal">
+
+         
+       <Button
+           android:layout_width  = "wrap_content"
+           android:layout_height = "wrap_content"
+           android:text          = "@string/button_solve" 
+           android:onClick       = "solveCountdown" />
+    
+       <Button
+           android:layout_width  = "wrap_content"
+           android:layout_height = "wrap_content"
+           android:text          = "@string/clear_inputs" 
+           android:onClick       = "clearInputs" />
+       
+    </LinearLayout> 
+    
+    <TextView
+        android:id               = "@+id/help_text_view"
+        android:layout_width     = "wrap_content"
+        android:layout_height    = "wrap_content"
+        android:text             = "@string/help_text"
+        tools:context            = ".MainPage"
+        android:textSize         = "10dp" />
+    
+    <TextView
+        android:id               = "@+id/example_text_view"
+        android:layout_width     = "wrap_content"
+        android:layout_height    = "wrap_content"
+        android:text             = "@string/example_text"
+        tools:context            = ".MainPage"
+        android:textSize         = "10dp" />
+    
+    <TextView
+        android:id               = "@+id/developer_info_box"
+        android:layout_width     = "wrap_content"
+        android:layout_height    = "wrap_content"
+        android:text             = "@string/developer_info"
+        tools:context            = ".MainPage"
+        android:textSize         = "10dp" />
+    
+    </LinearLayout>  
+</ScrollView>

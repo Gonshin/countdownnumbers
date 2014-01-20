@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">                       CountDown Numbers Game          </string>
+    <string name="button_solve">                   Find Solution                   </string>
+    <string name="cancel_calculation">             Cancel Calculation              </string>
+    <string name="clear_inputs">                   Clear Inputs                    </string>
+    <string name="cancel_search">                  Cancel Search for Solution      </string>
+
+    <string name="input_1">                        Input 1                         </string>
+    <string name="input_2">                        Input 2                         </string>
+    <string name="input_3">                        Input 3                         </string>
+    <string name="input_4">                        Input 4                         </string>
+    <string name="input_5">                        Input 5                         </string>
+    <string name="input_6">                        Input 6                         </string>
+    
+    <string name="input_numbers">                  Input Numbers                   </string>
+    <string name="menu_settings">                  Settings                        </string>
+    <string name="pending_status">                 Just started.                   </string>
+    <string name="pending_page_title">             CountDown Numbers Game          </string>   
+    <string name="pending_page_heading">           Looking for a solution.         </string> 
+    <string name="results">                        Results                         </string>
+    <string name="results_title">                  CountDown Numbers Game Solution </string>
+    <string name="return_to_main">                 Return To Main Page             </string>
+    <string name="target_number">                  Target Number                   </string>
+    <string name="title_text">                     CountDown Numbers Game Solver   </string>
+    <string name="title_activity_display_message"> Results Page                    </string>
+    <string name="title_main_page">                CountDown Numbers               </string>
+    
+    <string name="help_text"> \nThe user needs to enter the target value and the six input numbers
+		which are to be used to achieve that target value.\n
+	    The input numbers don\'t all have to be different.\n
+		When the user clicks on the \'Find Solution\' button,
+		the app will try to obtain the target by combining some or all of the six input numbers,
+		using addition, multiplication, division, subtraction and brackets.\n
+		A valid solution does not need to contain all six numbers,
+		but it cannot use the same input number more than once.\n
+		If an input is left blank, then it is assumed to be zero.\n
+    </string>
+        
+   <string name="example_text">
+       Suppose we had a target of 241\nand we have input numbers:\n  { 10, 5, 5, 2, 3, 6 }\n
+       then we could find a solution:\n  241 = ( 10 x 5 x 5 ) - (3 + 6)\n
+       Note how both 5\'s are used,\nbut the 2 is not used at all.\n
+   </string>
+
+    <string name="developer_info">
+        This app was developed for fun by Philip Kinlen.\n
+        The app is non-commercial and is distributed for free.
+    </string>
+</resources>

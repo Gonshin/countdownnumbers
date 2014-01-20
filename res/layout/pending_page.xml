@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android     = "http://schemas.android.com/apk/res/android"
+    xmlns:tools                 = "http://schemas.android.com/tools"
+    android:layout_width        = "match_parent"
+    android:layout_height       = "match_parent"
+    android:orientation         = "vertical" 
+    android:background          = "@drawable/background_pattern">
+
+    <TextView
+        android:id              = "@+id/pending_title_box"
+        android:layout_width    = "wrap_content"
+        android:layout_height   = "wrap_content"
+        android:text            = "@string/pending_page_heading" 
+        tools:context           = ".PendingPage"
+        android:textSize        = "14dp" />
+    
+    <TextView
+        android:id              = "@+id/pending_status_box"
+        android:layout_width    = "wrap_content"
+        android:layout_height   = "wrap_content"
+        android:text            = "@string/pending_status"
+        tools:context           = ".PendingPage" 
+        android:textSize        = "14dp"/>
+    
+    <Button
+        android:id              = "@+id/cancel_button"        
+        android:layout_width    = "wrap_content"
+        android:layout_height   = "wrap_content"
+        android:text            = "@string/cancel_search" 
+        android:onClick         = "cancelSearch" />
+        
+</LinearLayout>  
